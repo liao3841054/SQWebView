@@ -1,11 +1,7 @@
-use_frameworks!
+#use_frameworks!
 
 target 'SQWebView_Example' do
-  pod 'SQWebView', :path => '../'
-
-  target 'SQWebView_Tests' do
-    inherit! :search_paths
-
-    
-  end
+    pod 'SQWebView', :path => '../'
+    # JSBrige
+    pod 'WebViewJavascriptBridge', '~> 6.0.3'
 end

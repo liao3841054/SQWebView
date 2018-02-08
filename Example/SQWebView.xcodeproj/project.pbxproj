@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10F15B561BA3E21D66E1F6DD /* Pods_SQWebView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5E2211967448BB2F250A39 /* Pods_SQWebView_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +22,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		EF32557AE98881D8528573EB /* Pods_SQWebView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB45A156D02E8982B3171331 /* Pods_SQWebView_Tests.framework */; };
+		A304B00C202C32C30017B0B7 /* SQWKCookieUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A304B005202C32C30017B0B7 /* SQWKCookieUtils.m */; };
+		A304B00D202C32C30017B0B7 /* SQWebViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A304B008202C32C30017B0B7 /* SQWebViewConfig.m */; };
+		A304B00E202C32C30017B0B7 /* SQWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A304B00A202C32C30017B0B7 /* SQWebView.m */; };
+		C2FCB1B678735251CCCEFB5E /* libPods-SQWebView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD97BD98242524D5DC7DB0A6 /* libPods-SQWebView_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13CE462495EE7F494517B585 /* Pods-SQWebView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQWebView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQWebView_Tests/Pods-SQWebView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2C5E2211967448BB2F250A39 /* Pods_SQWebView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQWebView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DBEE815445E16DEDB22CC25 /* Pods-SQWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQWebView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQWebView_Tests/Pods-SQWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		47601C5E59A7DB8AAC11E218 /* SQWebView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SQWebView.podspec; path = ../SQWebView.podspec; sourceTree = "<group>"; };
+		47601C5E59A7DB8AAC11E218 /* SQWebView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SQWebView.podspec; path = ../SQWebView.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SQWebView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQWebView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,11 +61,19 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A304B005202C32C30017B0B7 /* SQWKCookieUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQWKCookieUtils.m; sourceTree = "<group>"; };
+		A304B006202C32C30017B0B7 /* SQWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQWeb.h; sourceTree = "<group>"; };
+		A304B007202C32C30017B0B7 /* SQWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQWebView.h; sourceTree = "<group>"; };
+		A304B008202C32C30017B0B7 /* SQWebViewConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQWebViewConfig.m; sourceTree = "<group>"; };
+		A304B009202C32C30017B0B7 /* SQWKCookieUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQWKCookieUtils.h; sourceTree = "<group>"; };
+		A304B00A202C32C30017B0B7 /* SQWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQWebView.m; sourceTree = "<group>"; };
+		A304B00B202C32C30017B0B7 /* SQWebViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQWebViewConfig.h; sourceTree = "<group>"; };
 		B3BF31C557DED7FD627F7529 /* Pods-SQWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQWebView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQWebView_Example/Pods-SQWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0054820F19CF5AC7D2B39B1 /* Pods-SQWebView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQWebView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQWebView_Example/Pods-SQWebView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D6D4481A43B85BB9DA2A361C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CD97BD98242524D5DC7DB0A6 /* libPods-SQWebView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SQWebView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D4481A43B85BB9DA2A361C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EB45A156D02E8982B3171331 /* Pods_SQWebView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SQWebView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD0C1BF758EB5F46425184C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FD0C1BF758EB5F46425184C4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +84,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				10F15B561BA3E21D66E1F6DD /* Pods_SQWebView_Example.framework in Frameworks */,
+				C2FCB1B678735251CCCEFB5E /* libPods-SQWebView_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +95,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				EF32557AE98881D8528573EB /* Pods_SQWebView_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +129,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				2C5E2211967448BB2F250A39 /* Pods_SQWebView_Example.framework */,
 				EB45A156D02E8982B3171331 /* Pods_SQWebView_Tests.framework */,
+				CD97BD98242524D5DC7DB0A6 /* libPods-SQWebView_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 		6003F593195388D20070C39A /* Example for SQWebView */ = {
 			isa = PBXGroup;
 			children = (
+				A304B004202C32C30017B0B7 /* SQWebView */,
 				6003F59C195388D20070C39A /* SQAppDelegate.h */,
 				6003F59D195388D20070C39A /* SQAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -190,10 +197,23 @@
 			children = (
 				B3BF31C557DED7FD627F7529 /* Pods-SQWebView_Example.debug.xcconfig */,
 				C0054820F19CF5AC7D2B39B1 /* Pods-SQWebView_Example.release.xcconfig */,
-				2DBEE815445E16DEDB22CC25 /* Pods-SQWebView_Tests.debug.xcconfig */,
-				13CE462495EE7F494517B585 /* Pods-SQWebView_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A304B004202C32C30017B0B7 /* SQWebView */ = {
+			isa = PBXGroup;
+			children = (
+				A304B006202C32C30017B0B7 /* SQWeb.h */,
+				A304B009202C32C30017B0B7 /* SQWKCookieUtils.h */,
+				A304B005202C32C30017B0B7 /* SQWKCookieUtils.m */,
+				A304B007202C32C30017B0B7 /* SQWebView.h */,
+				A304B00A202C32C30017B0B7 /* SQWebView.m */,
+				A304B00B202C32C30017B0B7 /* SQWebViewConfig.h */,
+				A304B008202C32C30017B0B7 /* SQWebViewConfig.m */,
+			);
+			name = SQWebView;
+			path = ../../SQWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,12 +243,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "SQWebView_Tests" */;
 			buildPhases = (
-				7F49EF39ED0D5DFDCAC92861 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				0E63515ACC2E523F4EE248B4 /* [CP] Embed Pods Frameworks */,
-				2A6F2F0B1A29F460042475F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +267,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "251180323@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 865L62UDE9;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -312,36 +332,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQWebView_Example/Pods-SQWebView_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0E63515ACC2E523F4EE248B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQWebView_Tests/Pods-SQWebView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2A6F2F0B1A29F460042475F3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQWebView_Tests/Pods-SQWebView_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5136B14C55E0B77527CD2DDD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,24 +348,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQWebView_Example/Pods-SQWebView_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F49EF39ED0D5DFDCAC92861 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SQWebView_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AEEB55460FA1280EA423E19B /* [CP] Check Pods Manifest.lock */ = {
@@ -403,9 +375,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A304B00C202C32C30017B0B7 /* SQWKCookieUtils.m in Sources */,
 				6003F59E195388D20070C39A /* SQAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SQViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A304B00E202C32C30017B0B7 /* SQWebView.m in Sources */,
+				A304B00D202C32C30017B0B7 /* SQWebViewConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +508,7 @@
 			baseConfigurationReference = B3BF31C557DED7FD627F7529 /* Pods-SQWebView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 865L62UDE9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SQWebView/SQWebView-Prefix.pch";
 				INFOPLIST_FILE = "SQWebView/SQWebView-Info.plist";
@@ -548,6 +524,7 @@
 			baseConfigurationReference = C0054820F19CF5AC7D2B39B1 /* Pods-SQWebView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 865L62UDE9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SQWebView/SQWebView-Prefix.pch";
 				INFOPLIST_FILE = "SQWebView/SQWebView-Info.plist";
@@ -560,7 +537,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DBEE815445E16DEDB22CC25 /* Pods-SQWebView_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -584,7 +560,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13CE462495EE7F494517B585 /* Pods-SQWebView_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
