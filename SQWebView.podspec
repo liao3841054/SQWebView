@@ -32,13 +32,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SQWebView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SQWebView' => ['SQWebView/Assets/*.png']
-  # }
+  s.source_files = 'SQWebView/**/*'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'WebViewJavascriptBridge', '~> 6.0.3'
+
 end
