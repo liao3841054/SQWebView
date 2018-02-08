@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SQWebView
 
 [![CI Status](http://img.shields.io/travis/251180323@qq.com/SQWebView.svg?style=flat)](https://travis-ci.org/251180323@qq.com/SQWebView)
@@ -27,3 +28,6 @@ pod 'SQWebView'
 ## License
 
 SQWebView is available under the MIT license. See the LICENSE file for more info.
+=======
+# SQWebView
+>>>>>>> e2726b430353d52cb62ee8ffbaaa0e05d2836d95
