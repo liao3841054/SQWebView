@@ -25,6 +25,7 @@
 		A304B00C202C32C30017B0B7 /* SQWKCookieUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A304B005202C32C30017B0B7 /* SQWKCookieUtils.m */; };
 		A304B00D202C32C30017B0B7 /* SQWebViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A304B008202C32C30017B0B7 /* SQWebViewConfig.m */; };
 		A304B00E202C32C30017B0B7 /* SQWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A304B00A202C32C30017B0B7 /* SQWebView.m */; };
+		A304B011202C377E0017B0B7 /* SQWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A304B010202C377E0017B0B7 /* SQWebViewController.m */; };
 		C2FCB1B678735251CCCEFB5E /* libPods-SQWebView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD97BD98242524D5DC7DB0A6 /* libPods-SQWebView_Example.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		A304B009202C32C30017B0B7 /* SQWKCookieUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQWKCookieUtils.h; sourceTree = "<group>"; };
 		A304B00A202C32C30017B0B7 /* SQWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQWebView.m; sourceTree = "<group>"; };
 		A304B00B202C32C30017B0B7 /* SQWebViewConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQWebViewConfig.h; sourceTree = "<group>"; };
+		A304B00F202C377E0017B0B7 /* SQWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQWebViewController.h; sourceTree = "<group>"; };
+		A304B010202C377E0017B0B7 /* SQWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQWebViewController.m; sourceTree = "<group>"; };
 		B3BF31C557DED7FD627F7529 /* Pods-SQWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQWebView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQWebView_Example/Pods-SQWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0054820F19CF5AC7D2B39B1 /* Pods-SQWebView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQWebView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQWebView_Example/Pods-SQWebView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CD97BD98242524D5DC7DB0A6 /* libPods-SQWebView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SQWebView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +150,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				A304B00F202C377E0017B0B7 /* SQWebViewController.h */,
+				A304B010202C377E0017B0B7 /* SQWebViewController.m */,
 			);
 			name = "Example for SQWebView";
 			path = SQWebView;
@@ -376,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A304B00C202C32C30017B0B7 /* SQWKCookieUtils.m in Sources */,
+				A304B011202C377E0017B0B7 /* SQWebViewController.m in Sources */,
 				6003F59E195388D20070C39A /* SQAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SQViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,

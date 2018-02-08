@@ -184,6 +184,17 @@
     
 }
 
+- (NSString *)title
+{
+    if (self.wkWebView) {
+        return self.wkWebView.title;
+    }
+    else {
+        return [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    }
+    return nil;
+}
+
 #pragma mark -
 
 - (void)layoutSubviews

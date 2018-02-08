@@ -7,6 +7,7 @@
 //
 
 #import "SQViewController.h"
+#import "SQWebViewController.h"
 
 @interface SQViewController ()
 
@@ -18,6 +19,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"WebView Demo";
+    
+    UIButton *webButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [webButton setTitle:@"Web" forState:UIControlStateNormal];
+    [webButton setFrame:CGRectMake(100, 100, 100, 40)];
+    [webButton setBackgroundColor:[UIColor blackColor]];
+    [webButton addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:webButton];
+    
+}
+
+- (void)buttonClicked:(UIButton *)button{
+    
+    SQWebViewController *webVc = [[SQWebViewController alloc] init];
+    [self.navigationController pushViewController:webVc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

@@ -63,6 +63,10 @@ typedef void(^JavaScriptCompletionBlock)(NSString *result, NSError *error);
  */
 - (void)wkReloadUserCookie;
 
+/*
+ */
+- (NSString *)title;
+
 
 /**
  evaluate JavaScript code
